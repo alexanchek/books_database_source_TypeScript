@@ -1,0 +1,6 @@
+[
+    {"label": "Фильмы", "link": "/movies"},
+    {"label": "Добавить фильмы", "link": "/movies-add"},
+    {"label": "Книги", "link": "/books"},
+    {"label": "Добавить книгу", "link": "/books-add"}
+]

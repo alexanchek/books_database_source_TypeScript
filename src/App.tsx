@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { NavBar } from './components/Navbar/Navbar'
+import { MoviesList } from './components/Pages/MoviesList/MoviesList'
+import { MoviesAdd } from './components/Pages/MoviesAdd/MoviesAdd'
+import { BooksAdd } from './components/Pages/BooksAdd/BooksAdd'
+import { BooksList } from './components/Pages/BooksList/BooksList'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <NavBar/>
+          <Switch>
+              <Route component={MoviesList} exact path="/"/>
+              <Route component={MoviesList} exact path="/movies"/>
+              <Route component={MoviesAdd} exact path="/movies-add"/>
+              <Route component={BooksList} exact path="/books"/>
+              <Route component={BooksAdd} exact path="/books-add"/>
+          </Switch>
+      </Router>
     </div>
   );
 }

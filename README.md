@@ -4,6 +4,6 @@
 
 the result is here: https://alexanchek.github.io/books_database
 
-## Technoloies I used
+## Technologies I used
 
 Type Script, React, UseState

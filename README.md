@@ -2,6 +2,8 @@
 
 ## Description
 
+Made from ground zero.
+
 the result is here: https://alexanchek.github.io/books_database
 
 ## Technologies I used
